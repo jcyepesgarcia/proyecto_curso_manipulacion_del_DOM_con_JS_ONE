@@ -18,11 +18,12 @@ main {
   justify-content: center;
 }
 
-form {
+.form {
   width: 100%;
   justify-content: space-between;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 15px;
 }
 
@@ -64,6 +65,7 @@ form {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  min-width: 97px;
 }
 
 .cardsList {
@@ -117,6 +119,7 @@ form {
   top: -100px;
   left: 0;
 }
+
 .deleteSpace {
   position: relative;
   width: 30%;
@@ -124,4 +127,18 @@ form {
 
 .noTasks {
   font-size: 48px;
+}
+
+@media screen and (max-width:1024px) {
+  .mainCard {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width:849px) {
+  .inputForm,
+  .btnCreate {
+    width: 90vw;
+    margin-bottom: 20px;
+  }
 }
